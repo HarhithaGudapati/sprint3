@@ -4,7 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import com.example.currencyconverter.model.CurrencyConversion;
-//import com.example.currencyconverter.model.RateTrend;
+
 import com.example.currencyconverter.model.ConversionResult;
 import com.example.currencyconverter.service.CurrencyConverterService;
 
@@ -21,7 +21,8 @@ public class CurrencyConverterController {
     public CurrencyConverterController(CurrencyConverterService converterService) {
         this.converterService = converterService;
     }
-    
+
+    //Maps to converter
     @GetMapping("/converter")
     public String showConverter(Model model) {
         model.addAttribute("conversion", new CurrencyConversion());

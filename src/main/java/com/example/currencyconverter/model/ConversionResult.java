@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 import java.math.BigDecimal;
 
 public class ConversionResult {
-    //private Long id;                  
+                     
     private BigDecimal amount;        
     private String fromCurrency;      
     private String toCurrency;        
@@ -29,13 +29,7 @@ public class ConversionResult {
     }
 
     // Getters and Setters
-  /*   public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    } */
+ 
 
     public BigDecimal getAmount() {
         return amount;
